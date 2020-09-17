@@ -2,12 +2,12 @@
 
 using namespace std;
 
-typedef struct{
+struct Planete{
     string type;
     string nom;
     string FirstGaz;
     string SecondGaz;
-}Planete;
+};
 
 int main() {
 
@@ -15,7 +15,7 @@ int main() {
                                           .type = "telluriques",
                                           .nom = "Mercure",
                                           .FirstGaz = "-- ",
-                                          .SecondGaz = "-- w"},
+                                          .SecondGaz = "-- "},
                                   {
                                           .type = "telluriques",
                                           .nom = "Venus  ",
@@ -56,6 +56,7 @@ int main() {
     cout << "| Type de la planete | Nom de la planete | Gaz principal | Gaz secondaire |" << endl;
     for(int i = 0; i < 8; i++)
     {
+
         cout << "  " << Systeme_solaire[i].type
              << "              " << Systeme_solaire[i].nom
              << "              " << Systeme_solaire[i].FirstGaz
